@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chauffage chambre</title>
+    <!--Lien vers la feuille de style-->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Lien vers le fichier JavaScript-->
+    <script type="text/javascript" src="chambre.js"></script>
+  </head>
+
+  <body>
+    <!--Texte en haut, nom du projet, idem sur chaque page-->
+    <div class="nom_projet">
+      HOME PILOT
+      <br />
+    </div>
+    <!--Repère du circuit concerné-->
+    <div class="nom_circuit">
+      Radiateur chambre
+      <br />
+    </div>
+    <!--Bouton principal, permet de choisir le mode de fonctionnement-->
+    <div class="centre">
+      <button id="couleur" class="bouton_mode" onclick="changeMode()">
+        <!--appel de fonction dans le fichier JavaScript-->
+        <div id="texte">
+          ??
+          <!--texte par défaut-->
+        </div>
+      </button>
+    </div>
+    <!--Tableau des boutons en mode programme-->
+    <div id="afficheProgramme">
+      <!--Première ligne, 0h à 6h-->
+      <!--Repères horaires-->
+      <div class="tableau_heures">
+        <div class="repere_heures">0h</div>
+        <div class="repere_heures">1h</div>
+        <div class="repere_heures">2h</div>
+        <div class="repere_heures">3h</div>
+        <div class="repere_heures">4h</div>
+        <div class="repere_heures">5h</div>
+      </div>
+      <!--Boutons de programmation de mode par heure-->
+      <div class="centre">
+        <button id="couleurH00" class="bouton_prog" onclick="changeProg(0)">
+          <div id="texteH00">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH01" class="bouton_prog" onclick="changeProg(1)">
+          <div id="texteH01">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH02" class="bouton_prog" onclick="changeProg(2)">
+          <div id="texteH02">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH03" class="bouton_prog" onclick="changeProg(3)">
+          <div id="texteH03">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH04" class="bouton_prog" onclick="changeProg(4)">
+          <div id="texteH04">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH05" class="bouton_prog" onclick="changeProg(5)">
+          <div id="texteH05">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <br />
+      </div>
+      <!--Deuxième ligne, 6h à 12h-->
+      <!--Repères horaires-->
+      <div class="tableau_heures">
+        <div class="repere_heures">6h</div>
+        <div class="repere_heures">7h</div>
+        <div class="repere_heures">8h</div>
+        <div class="repere_heures">9h</div>
+        <div class="repere_heures">10h</div>
+        <div class="repere_heures">11h</div>
+      </div>
+      <!--Boutons de programmation de mode par heure-->
+      <div class="centre">
+        <button id="couleurH06" class="bouton_prog" onclick="changeProg(6)">
+          <div id="texteH06">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH07" class="bouton_prog" onclick="changeProg(7)">
+          <div id="texteH07">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH08" class="bouton_prog" onclick="changeProg(8)">
+          <div id="texteH08">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH09" class="bouton_prog" onclick="changeProg(9)">
+          <div id="texteH09">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH10" class="bouton_prog" onclick="changeProg(10)">
+          <div id="texteH10">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH11" class="bouton_prog" onclick="changeProg(11)">
+          <div id="texteH11">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <br />
+      </div>
+      <!--Troisième ligne, 12h à 18h-->
+      <!--Repères horaires-->
+      <div class="tableau_heures">
+        <div class="repere_heures">12h</div>
+        <div class="repere_heures">13h</div>
+        <div class="repere_heures">14h</div>
+        <div class="repere_heures">15h</div>
+        <div class="repere_heures">16h</div>
+        <div class="repere_heures">17h</div>
+      </div>
+      <!--Boutons de programmation de mode par heure-->
+      <div class="centre">
+        <button id="couleurH12" class="bouton_prog" onclick="changeProg(12)">
+          <div id="texteH12">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH13" class="bouton_prog" onclick="changeProg(13)">
+          <div id="texteH13">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH14" class="bouton_prog" onclick="changeProg(14)">
+          <div id="texteH14">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH15" class="bouton_prog" onclick="changeProg(15)">
+          <div id="texteH15">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH16" class="bouton_prog" onclick="changeProg(16)">
+          <div id="texteH16">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH17" class="bouton_prog" onclick="changeProg(17)">
+          <div id="texteH17">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <br />
+      </div>
+      <!--Quatrième ligne, 18h à 24h-->
+      <!--Repères horaires-->
+      <div class="tableau_heures">
+        <div class="repere_heures">18h</div>
+        <div class="repere_heures">19h</div>
+        <div class="repere_heures">20h</div>
+        <div class="repere_heures">21h</div>
+        <div class="repere_heures">22h</div>
+        <div class="repere_heures">23h</div>
+      </div>
+      <!--Boutons de programmation de mode par heure-->
+      <div class="centre">
+        <button id="couleurH18" class="bouton_prog" onclick="changeProg(18)">
+          <div id="texteH18">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH19" class="bouton_prog" onclick="changeProg(19)">
+          <div id="texteH19">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH20" class="bouton_prog" onclick="changeProg(20)">
+          <div id="texteH20">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH21" class="bouton_prog" onclick="changeProg(21)">
+          <div id="texteH21">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH22" class="bouton_prog" onclick="changeProg(22)">
+          <div id="texteH22">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <button id="couleurH23" class="bouton_prog" onclick="changeProg(23)">
+          <div id="texteH23">
+            ??
+            <!--texte par défaut-->
+          </div>
+        </button>
+        <br />
+      </div>
+    </div>
+    <!--Bouton retour vers la page d'accueil-->
+    <div class="centre">
+      <button class="bouton_retour" onclick="retourIndex()">Enregistre</button>
+    </div>
+    <!--Bouton annule-->
+    <div class="centre">
+      <button class="bouton_retour" onclick="annule()">Annule</button>
+    </div>
+    <script>
+      chargeConfig();
+    </script>
+    <script>
+      animePage();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body
+ {
+  background-color:#888888;
+ }
+.bouton_mode
+ {
+  text-align:center;
+  background-color: #dddddd;
+  height:200px;
+  width:60%;
+  margin: 1px 0px 20px 0px; /* haut droit bas gauche*/
+  font-size:80px;
+  font-family: verdana;
+  border-radius: 30px;
+  border: 10px solid #bbbbbb;
+ }
+ .bouton_lien
+ {
+  text-align:center;
+  background-color: #dddddd;
+  height:200px;
+  width:80%;
+  margin: 1px 0px 20px 0px; /* haut droit bas gauche*/
+  font-size:80px;
+  font-family: verdana;
+  border-radius: 30px;
+  border: 10px solid #bbbbbb;
+ }
+ .bouton_retour
+ {
+  text-align:center;
+  background-color: #dddddd;
+  height:200px;
+  width:60%;
+  margin: 50px 0px 0px 0px; /* haut droit bas gauche*/
+  font-size:80px;
+  font-family: verdana;
+  border-radius: 30px;
+  border: 10px solid #bbbbbb;
+ }
+ .bouton_prog
+ {
+  text-align: center;
+  background-color: #dddddd;
+  height: 140px;
+  width: 15%;
+  margin: 0px 0px 5px 0px; /* haut droit bas gauche*/
+  font-size: 40px;
+  font-family: verdana;
+  border-radius: 30px;
+  border: 10px solid #bbbbbb;
+ } 
+.centre
+{
+  text-align: center;
+  margin: 0px 0px 0px 0px; /* haut droit bas gauche*/
+}
+.nom_projet
+ {
+  text-align: center;
+  font-size: 80px;
+  font-family: verdana;
+  margin: 1px 0px 1px 0px; /* haut droit bas gauche*/
+ }
+.nom_circuit
+ {
+  text-align: left;
+  font-size: 60px;
+  font-family: verdana;
+  margin: 1px 0px 10px 0px; /* haut droit bas gauche*/
+ }
+.repere_heures
+{
+  text-align: left;
+  font-size: 40px;
+  font-family: verdana;
+} 
+.tableau_heures
+{
+  display: grid;
+  width:90%;
+  margin: 1px 5% 1px 5%; /* haut droit bas gauche*/
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
